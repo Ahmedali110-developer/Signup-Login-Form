@@ -192,3 +192,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .signup-form, .login-form, .dashboard {
+        padding: 15px;
+    }
+
+    .signup-form input, .login-form input {
+        font-size: 14px;
+    }
+
+    .signup-form button, .login-form button, .dashboard button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
