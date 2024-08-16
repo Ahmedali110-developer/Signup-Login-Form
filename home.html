@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- Separate CSS for login form -->
+  </head>
+  <body>
+    <header>
+      <h1>Login to Your Account</h1>
+      <nav>
+        <a href="index.html">Home</a> | <a href="home.html">Login</a> |
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Login Form -->
+      <section class="login-form">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" onclick="loginHandler(event)">Login</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Back to Signup</button>
+
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Your Website</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
